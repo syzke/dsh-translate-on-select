@@ -1,0 +1,39 @@
+{
+  "name": "dsh-translate-on-select",
+  "version": "0.1.0",
+  "description": "DSH 划词翻译：鼠标选中非中文内容后，在选区下方就地浮出简体中文译文",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "translate",
+    "translation",
+    "selection",
+    "select-to-translate",
+    "划词翻译"
+  ],
+  "homepage": "https://github.com/syzke/dsh-translate-on-select#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syzke/dsh-translate-on-select.git"
+  },
+  "bugs": {
+    "url": "https://github.com/syzke/dsh-translate-on-select/issues"
+  },
+  "author": "syzke",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

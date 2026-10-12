@@ -1,0 +1,8 @@
+# dsh-translate-on-select —— DSH bundle patch
+#
+# 把插件挂载进 profile 的配置树。dsh plugin 安装时会自动识别该文件
+# （package.json 的 dsh.bundle.patch 指向它）。
+
+- insert:
+    - id: dsh-translate-on-select
+      name: dsh-translate-on-select

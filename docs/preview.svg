@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" role="img" aria-label="dsh-translate-on-select 翻译卡片示意图">
+  <title>dsh-translate-on-select 翻译卡片示意图（非真实截图）</title>
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.28"/>
+    </filter>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 页面背景（示意 DSH 对话区） -->
+  <rect x="0" y="0" width="720" height="320" rx="12" fill="#f6f7f9"/>
+  <rect x="0" y="0" width="720" height="44" rx="12" fill="#eceef2"/>
+  <rect x="0" y="32" width="720" height="12" fill="#eceef2"/>
+  <circle cx="22" cy="22" r="4" fill="#d3d7de"/>
+  <circle cx="38" cy="22" r="4" fill="#d3d7de"/>
+  <circle cx="54" cy="22" r="4" fill="#d3d7de"/>
+
+  <!-- 正文与选区 -->
+  <rect x="40" y="72" width="360" height="10" rx="5" fill="#dcdfe5"/>
+  <rect x="40" y="94" width="470" height="10" rx="5" fill="#dcdfe5"/>
+  <rect x="40" y="126" width="430" height="26" rx="6" fill="#bfdbfe"/>
+  <text x="50" y="145" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" fill="#1e3a5f">The quick brown fox jumps over the lazy dog.</text>
+
+  <!-- 翻译卡片 -->
+  <g filter="url(#sh)">
+    <rect x="40" y="168" width="470" height="118" rx="14" fill="#ffffff" fill-opacity="0.96" stroke="#0f172a" stroke-opacity="0.10"/>
+  </g>
+  <!-- 头部 -->
+  <rect x="54" y="182" width="19" height="19" rx="6" fill="url(#badge)"/>
+  <text x="63.5" y="196" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">译</text>
+  <text x="82" y="196" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11.5" fill="#6b7280">英语 → 简体中文</text>
+  <g fill="none" stroke="#9aa3af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="428" y="186" width="9" height="9" rx="1.6"/>
+    <path d="M425 193v-3.6a1.6 1.6 0 0 1 1.6-1.6h3.4"/>
+    <path d="M452 184a5.5 5.5 0 1 1-1.6-3.9"/>
+    <path d="M452 178.5v3.5h-3.5"/>
+    <path d="M479 184l7 7M486 184l-7 7"/>
+  </g>
+  <line x1="40" y1="210" x2="510" y2="210" stroke="#0f172a" stroke-opacity="0.10"/>
+  <!-- 正文 -->
+  <text x="54" y="238" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" fill="#1f2328">敏捷的棕色狐狸跨过了那只懒狗。</text>
+  <!-- 底栏 -->
+  <text x="54" y="270" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11" fill="#6b7280">Bing · 44 字符 · Esc 关闭</text>
+
+  <!-- 说明 -->
+  <text x="540" y="200" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11" fill="#8b93a1">松手约 200ms 后</text>
+  <text x="540" y="218" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11" fill="#8b93a1">卡片浮在选区正下方；</text>
+  <text x="540" y="236" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="11" fill="#8b93a1">下方放不下时自动翻到上方。</text>
+  <text x="540" y="262" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="10.5" fill="#aab1bd">（示意图，非真实截图）</text>
+</svg>
