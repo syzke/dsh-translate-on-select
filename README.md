@@ -32,6 +32,7 @@
 dsh plugin --profile desktop add github:syzke/dsh-translate-on-select
 ```
 
+- 需要本机装了 `git`（pnpm 通过 git 拉取源码）。
 - `desktop` 是桌面客户端的 profile；如果你跑的是 `dsh web`，把 `--profile desktop` 换成 `--profile web`。
 - 本插件**没有 `prepare` 脚本**，所以 pnpm 不会要求你在 `pnpm-workspace.yaml` 里追加 `allowBuilds` 授权，装完即可用。
 - 想锁定版本：先给仓库打 tag（如 `v0.1.0`），再 `dsh plugin --profile desktop add github:syzke/dsh-translate-on-select#v0.1.0`。
