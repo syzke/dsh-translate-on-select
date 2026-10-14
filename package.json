@@ -1,6 +1,6 @@
 {
   "name": "dsh-translate-on-select",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH 划词翻译：鼠标选中非中文内容后，在选区下方就地浮出简体中文译文",
   "type": "module",
   "main": "lib/index.js",

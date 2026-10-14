@@ -26,18 +26,27 @@
 
 需要已安装 `dsh` CLI（DeepSeek Harness 桌面客户端自带，源码运行时用 `pnpm dsh`）。
 
-### 方式一：从 GitHub 安装（推荐）
+### 方式一：从 npm 安装（推荐，最省事）
+
+```sh
+dsh plugin --profile desktop add dsh-translate-on-select
+```
+
+- `desktop` 是桌面客户端的 profile；如果你跑的是 `dsh web`，把 `--profile desktop` 换成 `--profile web`。
+- 包已经发在 npm 上：[dsh-translate-on-select](https://www.npmjs.com/package/dsh-translate-on-select)。
+- 本插件**没有 `prepare`/`build` 脚本**，预构建安装，pnpm 不会要求你在 `pnpm-workspace.yaml` 里追加 `allowBuilds` 授权。
+- 不需要本机装 `git`。
+
+### 方式二：从 GitHub 安装（直接跑源码）
 
 ```sh
 dsh plugin --profile desktop add github:syzke/dsh-translate-on-select
 ```
 
 - 需要本机装了 `git`（pnpm 通过 git 拉取源码）。
-- `desktop` 是桌面客户端的 profile；如果你跑的是 `dsh web`，把 `--profile desktop` 换成 `--profile web`。
-- 本插件**没有 `prepare` 脚本**，所以 pnpm 不会要求你在 `pnpm-workspace.yaml` 里追加 `allowBuilds` 授权，装完即可用。
-- 想锁定版本：先给仓库打 tag（如 `v0.1.0`），再 `dsh plugin --profile desktop add github:syzke/dsh-translate-on-select#v0.1.0`。
+- 想锁定版本：`... add github:syzke/dsh-translate-on-select#v0.1.1`。
 
-### 方式二：本地源码安装（改代码立即生效）
+### 方式三：本地源码安装（改代码立即生效）
 
 ```sh
 dsh plugin --profile desktop add "link:/absolute/path/to/dsh-translate-on-select"
@@ -167,12 +176,14 @@ translation appears right below the selection — no hotkey, no browser extensio
 no leaving the page.
 
 ```sh
-dsh plugin --profile desktop add github:syzke/dsh-translate-on-select
+dsh plugin --profile desktop add dsh-translate-on-select
 ```
 
 Then **restart the app once** (the injection table is collected at host startup and
 is not hot-reloaded). Text you select is sent to the public cn.bing.com translator
 (falling back to MyMemory); do not use it on secrets or private data.
+
+Install from source instead: `dsh plugin --profile desktop add github:syzke/dsh-translate-on-select`.
 
 ## 许可
 
