@@ -4,7 +4,7 @@
 
 选中即翻 —— 不用快捷键、不用装浏览器扩展、不用离开当前页面。
 
-![翻译卡片示意图](docs/preview.svg)
+![翻译卡片示意图](https://raw.githubusercontent.com/syzke/dsh-translate-on-select/main/docs/preview.svg)
 
 > 上图是卡片外观的**示意**（非真实截图）。实际效果：选中一段外文 → 松手约 200ms → 选区正下方出现译文卡片。
 
